@@ -1,0 +1,4 @@
+<button
+    {{ $attributes->merge(['type' => 'submit', 'class' => 'focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150', 'style' => 'background-color: white; color: red; border: 1px solid red; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 0.4rem 1rem; display: inline-flex; align-items: center; transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;', 'onmouseover' => "this.style.backgroundColor='red'; this.style.color='white'; this.style.borderColor='red'", 'onmouseout' => "this.style.backgroundColor='white'; this.style.color='red'; this.style.borderColor='red'", 'onmousedown' => "this.style.backgroundColor='darkred'; this.style.color='white'", 'onmouseup' => "this.style.backgroundColor='red'; this.style.color='white'"]) }}>
+    {{ $slot }}
+</button>
